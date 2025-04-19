@@ -78,13 +78,14 @@
   color: white;
   text-align: left;
   padding-bottom: 100px;
-  background-size: cover; /* Опционально, чтобы фон занимал всю область */
-  background-position: center; /* Опционально, для центрирования фона */
+  padding-top: 100px; 
+  background-size: cover; 
+  background-position: center; 
 }
 .title{
  max-width: 600px;
  text-align: left;
- margin-left: 50px;
+ margin-left: 50px; 
 }
 h2{
   font-size: 80px;
@@ -94,7 +95,7 @@ h2{
   font-size: 20px;
   max-width: 600px;
   padding-bottom: 20px;
-  margin-left: 50px;
+  margin-left: 50px; 
 
 }
 .inputform{
@@ -348,8 +349,10 @@ padding-bottom: 20px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .plans-unit ul li {
@@ -357,32 +360,48 @@ padding-bottom: 20px;
   border-top: 1px solid white;
   padding-top: 10px;
   position: relative;
+  text-align: left;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
 }
+
 .plans-button{
   display: flex;
   justify-content: center;
- padding-top: 10px;
+  padding-top: 10px;
 }
-.plans-button button{
-width: 200px;
-height: 50px;
-border-radius: 50px;
-background-color: #dd6322;
+
+.plans-button button {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #dd6322;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.plans-unit ul li::before{
+
+.plans-button button:hover {
+  background-color: #e64a19;
+}
+
+.plans-unit ul li::before {
   content: url("../icons/cross.svg");
   position: absolute;
-  top: 4px;
   left: -30px;
-  
+  top: 50%;
+  transform: translateY(-50%);
 }
-.plans-unit:nth-child(1) ul li:nth-last-child(1n+4)::before{
+
+.plans-unit:nth-child(1) ul li:nth-last-child(1n+4)::before {
   content: url("../icons/checkmark.svg");
 }
-.plans-unit:nth-child(2) ul li:nth-last-child(1n+3)::before{
+.plans-unit:nth-child(2) ul li:nth-last-child(1n+3)::before {
   content: url("../icons/checkmark.svg");
 }
-.plans-unit:nth-child(3) ul li:nth-last-child(1n+1)::before{
+.plans-unit:nth-child(3) ul li:nth-last-child(1n+1)::before {
   content: url("../icons/checkmark.svg");
 }
 
