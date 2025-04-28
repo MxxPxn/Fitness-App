@@ -1,3 +1,6 @@
+import React from 'react';
+import './TopTitle.scss';
+
 export const TopTitle = () => {
     return (
         <div id="about" className="top">

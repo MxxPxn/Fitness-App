@@ -1,3 +1,7 @@
+import React from 'react';
+import './Map.scss';
+
+
 export const Map = () => {
     return (
 
@@ -16,3 +20,4 @@ export const Map = () => {
         </div>
     )
 }
+export default Map;

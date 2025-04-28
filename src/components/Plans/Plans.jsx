@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Plans.scss';
+
 export const Plans =() => {
     return (
         <div id="plans" className="plans">

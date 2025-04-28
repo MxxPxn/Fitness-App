@@ -168,7 +168,9 @@ display: none;
   }
 }
 
-.supports{
+
+
+/* .supports{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
@@ -178,9 +180,9 @@ display: none;
 .supports div{
   display: flex;
   align-items: center;
-}
+} */
 
-.grid-category{
+/* .grid-category{
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -242,7 +244,7 @@ padding-bottom: 20px;
   
   background-color:#e64a19;
   
-}
+} */
 
 
 
@@ -281,7 +283,7 @@ padding-bottom: 20px;
   }
 }
 
-.plans {
+/* .plans {
   background-color: #212121;
   color: white;
   padding: 30px;
@@ -403,7 +405,7 @@ padding-bottom: 20px;
 }
 .plans-unit:nth-child(3) ul li:nth-last-child(1n+1)::before {
   content: url("../icons/checkmark.svg");
-}
+} */
 
 
 /* Add media queries for responsive design */
@@ -451,7 +453,7 @@ padding-bottom: 20px;
 }
 
 /* ====================== */
-.steps{
+/* .steps{
   display: flex;
   box-sizing: border-box;
   justify-content: center;
@@ -559,7 +561,7 @@ padding-bottom: 20px;
   left: -10px;
 
 
-}
+} */
 /* ====================== */
 
 @media only screen and (max-width: 600px) {
@@ -589,7 +591,7 @@ font-size: 20px;
 
 
 /* ====================== */
- .google-map{
+ /* .google-map{
   display: flex;
   justify-content: center;
   background-color: #212121;
@@ -598,9 +600,9 @@ font-size: 20px;
  .google-map iframe{
   border-radius: 40px;
   margin-top: 30px;
- }
+ } */
 
- .footer{
+ /* .footer{
   background-color: #212121;
   padding: 30px 20px;
   color: #f7f4f2;
@@ -665,7 +667,7 @@ font-size: 20px;
 
 .footer-bottom .social-media a:hover {
   text-decoration: underline;
-}
+} */
 
 
 

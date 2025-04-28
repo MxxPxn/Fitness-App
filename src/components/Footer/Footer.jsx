@@ -1,15 +1,18 @@
 import React from 'react';
+import logoIcon from '../../assets/icons/logo.svg';
+
+import './Footer.scss';
 
 export const Footer = () => {
     return(
         <div className="footer">
             <div className="footer-content">
             <div className="footer-logo">
-                <img src="icons/logo.svg" alt="logo" />
+                <img src={logoIcon} alt="logo" />
                 <p>Join MaxFit today and start your journey to a healthier, 
                 stronger you. Expert trainers, state-of-the-art facilities, and personalized programs await!</p>
             </div>
-                <div class="footer-links">
+                <div className="footer-links">
                     <h4>Info</h4>
                     <ul>
                         <li><button onClick={() => {}}>Newsroom</button></li>
@@ -19,7 +22,7 @@ export const Footer = () => {
                     </ul>
                 </div>
     
-                <div class="footer-links">
+                <div className="footer-links">
                     <h4>Partners</h4>
                     <ul>
                         <li><button onClick={() => {}}>Franchising</button></li>
@@ -28,7 +31,7 @@ export const Footer = () => {
                     </ul>
                 </div>
     
-                <div class="footer-links">
+                <div className="footer-links">
                     <h4>Legal</h4>
                     <ul>
                         <li><button onClick={() => {}}>Privacy Policy</button></li>
@@ -47,7 +50,7 @@ export const Footer = () => {
             </div>
         <div className="footer-bottom">
                     <p>©2024 MaxFit</p>
-                    <div class="social-media">
+                    <div className="social-media">
                         <button onClick={() => {}}> X (Twitter)</button>
                         <button onClick={() => {}}>Instagram</button>
                         <button onClick={() => {}}>Facebook</button>

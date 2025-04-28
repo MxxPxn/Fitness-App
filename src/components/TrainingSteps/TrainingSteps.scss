@@ -1,0 +1,109 @@
+.steps{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+  }
+  .steps .steps-title{
+    font-size: 60px;
+    text-align: center;
+    color: #f7f4f2;
+    margin-top: 20px;
+  }
+  
+  .training-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin-top: 30px;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    border: 1px solid #000;
+    background-color: #212121;
+    color: #f7f4f2;
+    border-radius: 80px;
+  }
+  .image-container img{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 50px;
+  
+  }
+  .text-container{
+    max-width: 40%;
+   
+  }
+  .text-container h3{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .text-container h4{
+    font-size: 30px;
+  }
+  .text-container p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  .stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .stat h2{
+    
+    font-size: 60px;
+    margin: 0px;
+  }
+  .stat span{
+    color: #dd6322;
+  }
+  .stat p{
+    font-size: 20px;
+    margin: 0;
+  }
+  .start-button{
+    padding: 15px 30px;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+  }
+  .start-button:hover{
+    background-color: #e64a19;
+  }
+  .steps-body2 .text-container{
+    text-align: center;
+  }
+  .steps-body2 ul li{
+    position: absolute;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .steps-body2 ul li h3{
+    margin-top: 60px;
+  }
+  .steps-body2 ul li p{
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 15px;
+    box-sizing: border-box;  
+    
+  }
+  .text-container ul li::before{
+    content: url("../../assets/icons/checkmark-in-circle.svg");
+    position: relative;
+    top: 5px;
+    left: -10px;
+  
+  
+  }

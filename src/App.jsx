@@ -6,8 +6,8 @@ import TopTitle from "./components/TopTitle/TopTitle";
 import Support from "./components/Support/Support";
 import Category from "./components/Category/Category";
 import Plans from "./components/Plans/Plans";
-import Steps from "./components/Steps/Steps";
-import Training from "./components/Training/Training";
+import TrainingSteps from "./components/TrainingSteps/TrainingSteps";
+import Map from "./components/Map/Map";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
             <Support />
             <Category />
             <Plans />
-            <Steps />
-            <Training />
+            <TrainingSteps />
+            <Map />
             <Footer />
         </div>
     )

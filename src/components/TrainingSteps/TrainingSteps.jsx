@@ -1,12 +1,20 @@
 import React from 'react';
 
+import './TrainingSteps.scss';
+import img1 from '../../assets/img/pexels-anush-1229356.jpg';
+import img2 from '../../assets/img/pexels-victorfreitas-949129.jpg';
+
 export const Steps = () => {
+    // Make sure your image paths are correct and accessible.
+    // For React projects using Webpack (like Create React App), import images instead of using relative paths.
+
+
     return (
       <div className="steps">
         <div className="steps-title">Training steps</div>
         <div className="training-section">
           <div className="image-container">
-            <img src="img/pexels-anush-1229356.jpg" width="460" height="345" alt="Training Image" />
+            <img src={img1} width="460" height="345" alt="People training in a gym" />
           </div>
           <div className="text-container">
             <h3>Start Training With Us</h3>
@@ -43,12 +51,12 @@ export const Steps = () => {
             </ul>
           </div>
           <div className="image-container">
-            <img src="img/pexels-victorfreitas-949129.jpg" width="460" height="345" alt="Fitness Training" />
+            <img src={img2} width="460" height="345" alt="Fitness training" />
           </div>
         </div>
         <div className="training-section">
           <div className="image-container">
-            <img src="img/pexels-anush-1229356.jpg" width="460" height="345" alt="Training Image" />
+            <img src={img1} width="460" height="345" alt="People training" />
           </div>
           <div className="text-container">
             <h3>Transform Your Life Through Fitness</h3>

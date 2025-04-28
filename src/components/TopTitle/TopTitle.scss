@@ -1,0 +1,59 @@
+.top{
+    background-image: url(../../assets/img/benifits_of_weight_lifting_female_in_gym.webp);
+    // background-image: url(./img/benifits_of_weight_lifting_female_in_gym.webp);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    padding-bottom: 100px;
+    padding-top: 100px; 
+    background-size: cover; 
+    background-position: center; 
+  }
+  .title{
+   max-width: 600px;
+   text-align: left;
+   margin-left: 50px; 
+  }
+  h2{
+    font-size: 80px;
+  
+  }
+  .subtext{
+    font-size: 20px;
+    max-width: 600px;
+    padding-bottom: 20px;
+    margin-left: 50px; 
+  
+  }
+  .inputform{
+  margin-left: 50px;
+  }
+  
+  
+  .inputform input{
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 330px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .inputform input:hover{
+    background-color: #f1eeee;
+    border: none;
+  }
+  .inputform input:focus{
+    background-color: #ffffff;
+  }
+  
+  .active-but{
+    border: 1px solid orangered;
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    color: white;
+    background-color: #ff5722;
+  }
+  .active-but:hover{
+    background-color:#e64a19 ;
+  }

@@ -1,0 +1,123 @@
+.plans {
+    background-color: #212121;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .plans-title {
+    text-align: center;
+    font-size: 68px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .plans-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .plans-unit {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  .plans-unit:nth-child(1) {
+    background-image: url("../../assets/img/pexels-anush-1229356.jpg");
+  }
+  .plans-unit:nth-child(2) {
+    background-image: url("../../assets/img/pexels-anush-1431282.jpg");
+  }
+  
+  .plans-unit:nth-child(3) {
+    background-image: url("../../assets/img/pexels-dreamlensproduction-896061.jpg");
+  }
+  
+  .plans-unit .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  
+  .price span {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f7f4f2;
+  }
+  
+  .plans-unit p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #dd6322;
+  }
+  
+  .plans-unit ul {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .plans-unit ul li {
+    font-size: 16px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .plans-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .plans-button button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #dd6322;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plans-button button:hover {
+    background-color: #e64a19;
+  }
+  
+  .plans-unit ul li::before {
+    content: url("../../assets/icons/cross.svg");
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .plans-unit:nth-child(1) ul li:nth-last-child(1n+4)::before {
+    content: url("../../assets/icons/checkmark.svg");
+  }
+  .plans-unit:nth-child(2) ul li:nth-last-child(1n+3)::before {
+    content: url("../../assets/icons/checkmark.svg");
+  }
+  .plans-unit:nth-child(3) ul li:nth-last-child(1n+1)::before {
+    content: url("../../assets/icons/checkmark.svg");
+  }
