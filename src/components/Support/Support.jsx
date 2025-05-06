@@ -1,5 +1,6 @@
 import React from 'react';
 import './Support.scss';
+import { Link } from 'react-router-dom';
 
 import googleIcon from '../../assets/icons/google-svgrepo-com.svg';
 import metaIcon from '../../assets/icons/meta-logo-12362.svg';
@@ -13,34 +14,34 @@ export const Support = () => {
   return (
     <div className="supports">
       <div>
-        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+        <Link to="https://www.google.com/" target="_blank" rel="noopener noreferrer">
           <img src= { googleIcon } alt="Google" />
-        </a>
+        </Link>
       </div>
       <div>
-        <a href="https://about.meta.com/" target="_blank" rel="noopener noreferrer">
+        <Link to="https://about.meta.com/" target="_blank" rel="noopener noreferrer">
           <img src={ metaIcon } alt="Meta" />
-        </a>
+        </Link>
       </div>
       <div>
-        <a href="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">
+        <Link to="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">
           <img src={ netflixIcon } alt="Netflix" />
-        </a>
+        </Link>
       </div>
       <div>
-        <a href="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer">
+        <Link to="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer">
           <img src={ paypalIcon } alt="PayPal" />
-        </a>
+        </Link>
       </div>
       <div>
-        <a href="https://www.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">
+        <Link to="https://www.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">
           <img src={ microsoftIcon } alt="Microsoft" />
-        </a>
+        </Link>
       </div>
       <div>
-        <a href="https://www.amazon.com/ref=nav_logo" target="_blank" rel="noopener noreferrer">
+        <Link to="https://www.amazon.com/ref=nav_logo" target="_blank" rel="noopener noreferrer">
           <img src={ amazonIcon }alt="Amazon" />
-        </a>
+        </Link>
       </div>
     </div>
   );
