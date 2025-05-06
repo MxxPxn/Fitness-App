@@ -1,0 +1,70 @@
+@import '../../src/styles/nulling.css';
+
+// Variables
+:root {
+    --breakpoint-desktop: 1024px;
+    --breakpoint-tablet: 800px;
+    --breakpoint-mobile: 600px;
+    --column-gap: 8px;
+    --container-padding: 4px;
+  }
+  
+  // Base styles
+  * {
+    box-sizing: border-box;
+  }
+  
+  // Gallery Layout
+  .gallery-container {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--column-gap);
+    width: 100%;
+  }
+  
+  // Column styles with responsive behavior
+  .column {
+    // Desktop default
+    flex: 0 1 calc(33.333% - var(--column-gap));
+    
+    // Fluid responsive width using clamp
+    width: clamp(
+      100%,
+      (900px - 100vw) * 1000,
+      33.333%
+    );
+  
+    // Images within columns
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+      margin: 0 auto;
+      border-radius: 4px;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  
+    // Responsive breakpoints
+    @media screen and (max-width: var(--breakpoint-desktop)) {
+      flex: 0 0 calc(33.333% - var(--column-gap));
+    }
+  
+    @media screen and (max-width: var(--breakpoint-tablet)) {
+      flex: 0 0 calc(50% - var(--column-gap));
+    }
+  
+    @media screen and (max-width: var(--breakpoint-mobile)) {
+      flex: 0 0 100%;
+    }
+  }
