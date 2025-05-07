@@ -135,7 +135,7 @@ margin-left: 50px;
 
 
 /* Адаптивные стили */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .navbar {
 display: none;
   }
@@ -166,7 +166,7 @@ display: none;
   h2 {
     font-size: 40px; /* Уменьшение размера заголовка для мобильных устройств */
   }
-}
+} */
 
 
 
