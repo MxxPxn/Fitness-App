@@ -76,6 +76,9 @@
   
   .active-but {
     width: 180px;
+    &:hover {
+      background-color: #e64a19;
+    }
   }
 }
 
@@ -122,6 +125,9 @@
   .active-but {
     width: 90%;
     max-width: 200px;
+    &:hover {
+      background-color: #e64a19;
+    }
   }
 }
 
@@ -148,10 +154,23 @@
   .inputform input {
     height: 28px;
     font-size: 14px;
+    width: 50%;
+
+    &:hover {
+      background-color: #d8bdbd;
+      border: none;
+    }
+    
+    &:focus {
+      background-color: #ffffff;
+    }
   }
   
   .active-but {
     height: 32px;
     font-size: 14px;
+    &:hover {
+      background-color: #e64a19;
+    }
   }
 }

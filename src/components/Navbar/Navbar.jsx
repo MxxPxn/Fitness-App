@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.scss';
 import { useState, useEffect } from 'react';
+import logoIcon from '../../assets/icons/logo.svg';
 
 
 
@@ -64,16 +65,14 @@ export default function Navbar() {
       
       {/* Logo or Brand */}
       <div className="logo">
-        <a href="#" className="logo-link">
-          Logo
-        </a>
+        <img src={logoIcon} alt="logo" />
       </div>
       
       {/* Menu Items */}
       <div className="menu">
         {['Home', 'About', 'Services', 'Contact'].map((item, index) => (
           <div key={index} className="menu-item">
-            <a href="#" className="menu-link">{item}</a>
+            <Link to="#" className="menu-link">{item}</Link>
           </div>
         ))}
       </div>
