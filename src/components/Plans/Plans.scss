@@ -18,7 +18,7 @@
   
   .plans-column {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
   }
   
@@ -120,4 +120,11 @@
   }
   .plans-unit:nth-child(3) ul li:nth-last-child(1n+1)::before {
     content: url("../../assets/icons/checkmark.svg");
+  }
+  @media screen and (max-width: 768px) {
+    .plans-title {
+      font-size: 48px;
+    }
+
+    
   }
