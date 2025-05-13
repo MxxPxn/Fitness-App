@@ -35,9 +35,9 @@ export const Footer = () => {
                     <h4>Legal</h4>
                     <ul>
                         <li><button onClick={() => {}}>Privacy Policy</button></li>
-                        <li><button onClick={() => {}}>Terms and Conditions of Use</button></li>
+                        <li><button onClick={() => {}}>Terms and Conditions</button></li>
                         <li>
-                        <button onClick={() => {}}>Do Not Sell or Share My Personal Information</button>
+                        <button onClick={() => {}}>Share Information</button>
                     </li>
                         <li><button onClick={() => {}}>Accessibility</button></li>
                     </ul>
