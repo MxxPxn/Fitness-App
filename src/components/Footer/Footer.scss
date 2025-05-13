@@ -48,12 +48,6 @@
     background: none;
   }
 
-// .footer-links ul li a {
-//   color: white;
-//   text-decoration: none;
-//   font-size: 12px;
-// }
-
 .footer-links ul li a:hover {
   text-decoration: underline;
 }
@@ -81,4 +75,20 @@
 
 .footer-bottom .social-media a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer-logo p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .footer-logo p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  // Styles for desktop
 }
