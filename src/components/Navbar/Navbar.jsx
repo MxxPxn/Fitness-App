@@ -6,25 +6,6 @@ import logoIcon from '../../assets/icons/logo.svg';
 
 
 
-// export const Navbar = () => {
-//     return (
-//         <div className="navbar">
-//             <div className="menu">
-//                 <div className="menu-items"><Link to="/">Home</Link></div>
-//                 <div className="menu-items"><Link to="/">Service</Link></div>
-//                 <div className="menu-items"><Link to="/gallery">Galery</Link></div>
-//                 <div className="menu-items"><Link to="/">Plans</Link></div>
-//                 <div className="menu-items"><Link to="/">Contact</Link></div>
-//                 <div className="menu-items"><Link to="/">About</Link></div> 
-//             </div>
-//             <div className="buttons">
-//                 <button className="first-but">Log In</button>
-//                 <button className="second-active">Sign Up</button>
-//             </div>
-//         </div>
-//     );
-// };
-// export default Navbar;
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -70,13 +51,19 @@ export default function Navbar() {
       
       {/* Menu Items */}
       <div className="menu">
-        {['Home', 'About', 'Services', 'Contact'].map((item, index) => (
+        {[
+          { name: 'Home', to: '/' },
+          { name: 'About', to: '/' },
+          { name: 'Gallery', to: '/gallery' },
+          { name: 'Services', to: '/' },
+          { name: 'Contact', to: '/' }
+        ].map((item, index) => (
           <div key={index} className="menu-item">
-            <Link to="#" className="menu-link">{item}</Link>
+            <Link to={item.to} className="menu-link">{item.name}</Link>
           </div>
         ))}
       </div>
-      
+
       {/* Buttons */}
       <div className="buttons">
         <button className="button first-button">
