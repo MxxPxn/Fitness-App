@@ -33,22 +33,22 @@
   flex-direction: column;
 }
 
-.footer-links h4 {
+.footer-links h3 {
   margin: 10px 0 10px 0;
   font-size: 16px;
   font-weight: bold;
 }
 
-.footer-links ul li {
-  margin-bottom: 10px;
+.footer-item {
+  margin-bottom: 20px;
   
 }
-.footer-links ul li button{
+.footer-item a{
     color: white;
     background: none;
   }
 
-.footer-links ul li a:hover {
+.footer-item a:hover {
   text-decoration: underline;
 }
 
