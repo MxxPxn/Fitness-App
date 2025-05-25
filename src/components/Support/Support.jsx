@@ -12,38 +12,45 @@ import amazonIcon from '../../assets/icons/amazon-ar21.svg';
 
 export const Support = () => {
   return (
-    <div className="supports">
-      <div>
+    <section className="supports__column">
+
+      <div className ="supports__item">
         <Link to="https://www.google.com/" target="_blank" rel="noopener noreferrer">
           <img src= { googleIcon } alt="Google" />
         </Link>
       </div>
-      <div>
+
+      <div className ="supports__item">
         <Link to="https://about.meta.com/" target="_blank" rel="noopener noreferrer">
           <img src={ metaIcon } alt="Meta" />
         </Link>
       </div>
-      <div>
+
+      <div className ="supports__item"> 
         <Link to="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">
           <img src={ netflixIcon } alt="Netflix" />
         </Link>
       </div>
-      <div>
+
+      <div className ="supports__item">
         <Link to="https://www.paypal.com/us/home" target="_blank" rel="noopener noreferrer">
           <img src={ paypalIcon } alt="PayPal" />
         </Link>
       </div>
-      <div>
+
+      <div className ="supports__item">
         <Link to="https://www.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">
           <img src={ microsoftIcon } alt="Microsoft" />
         </Link>
       </div>
-      <div>
+
+      <div className ="supports__item">
         <Link to="https://www.amazon.com/ref=nav_logo" target="_blank" rel="noopener noreferrer">
           <img src={ amazonIcon }alt="Amazon" />
         </Link>
       </div>
-    </div>
+
+    </section>
   );
 };
 export default Support;
