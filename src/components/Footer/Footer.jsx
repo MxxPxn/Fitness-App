@@ -6,7 +6,7 @@ import './Footer.scss';
 export const Footer = () => {
     return (
         <div className="footer">
-            <div className="footer-content">
+            <nav className="footer-navigation">
                 <div className="footer-logo">
                     <img src={logoIcon} alt="logo" />
                     <p>
@@ -14,6 +14,7 @@ export const Footer = () => {
                         stronger you. Expert trainers, state-of-the-art facilities, and personalized programs await!
                     </p>
                 </div>
+                
                 <div className="footer-links">
                     <h3 className="footer-title"> Info </h3>
                     <ul className="footer-list">
@@ -68,8 +69,8 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                
-            </div>
+
+            </nav>
             <div className="footer-bottom">
                 <p>©2024 MaxFit</p>
                 <div className="social-media">
