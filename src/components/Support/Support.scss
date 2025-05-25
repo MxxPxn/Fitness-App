@@ -1,11 +1,21 @@
-.supports{
+.supports__column{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-items: center;
     align-items: center;
   
   }
-  .supports div{
+  .supports__item{
     display: flex;
     align-items: center;
   }
+  //  @media only screen and (max-width: 576px) {
+  //   .supports__item{
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+  //   .supports__item img{
+  //     width: 80px;
+  //     height: 80px;
+  //   }
+  //  }
